@@ -1,0 +1,12 @@
+
+[Unit]
+Description=Servico Manitoreo en Directorio
+After=netwrk.target
+
+[Service]
+Tyoe=simple
+ExecStart=/bin/bash/home/crojas/Lab2/servicios.sh
+WorkingDirectoru=/home/crojas/Lab2
+
+[Install]
+WantedBy=multi-user.target
